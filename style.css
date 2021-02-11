@@ -42,6 +42,12 @@ g #bgleft {
 	fill: white;
 	transition: 200ms;
 }
+g #texteng {
+	transition: 300ms;
+}
+g #bgright {
+	transition: 200ms;
+}
 
 .btn-swe {
 	padding: 0;
