@@ -1,0 +1,36 @@
+Chill idé,
+
+Man har title och sen banner, sen en knapp som heter tldr: trycker man på den får man upp
+information:
+name
+location
+number
+mail
+git + linkdin
+contact
+
+syntax, languages, experiences, fluent / intermediate:
+php
+javascript
+sqlite + mysql
+c#
+css
+html
+
+Education: 
+Currently studying at yrgo
+web developement graduating in 2022.
+
+prior employments
+Personal assistent 4 years
+Distribution
+Warehouse
+Sales
+
+Want to know more? 
+
+
+
+
+
+, kunskaper, skola, tidigare arbeten, 
