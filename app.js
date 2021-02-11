@@ -1,18 +1,3 @@
-// let myName = document.querySelector(".myname");
-
-// let moreNames = "Lucas Ernst Joachim Jirkhem Nordeborg";
-// myName.addEventListener("mouseover", (e) => {
-// 	myName.textContent = moreNames;
-// });
-
-// myName.addEventListener("mouseout", (e) => {
-// 	myName.textContent = "Lucas Nordeborg";
-// });
-
-// let yo = document.querySelector(".yo");
-
-// document.addEventListener("onload", (e) => {});
-
 let btnBgSwe = document.querySelector("#bgleft");
 let btnTextSwe = document.querySelector("#swe");
 
@@ -39,3 +24,26 @@ btnEng.addEventListener("click", () => {
 	btnBgEng.style.fill = "#b64100";
 	btnTextEng.style.fill = "white";
 });
+
+let hamup = document.querySelector("#hamup");
+let hamdown = document.querySelector("#hamdown");
+
+const btnHam = document.querySelector(".btn-ham");
+
+let hamState = 0;
+
+btnHam.addEventListener("click", () => {
+	if (hamState === 1) {
+		hamState--;
+		hamup.style.transform = `translateX(0px) rotateZ(0deg)`;
+		hamdown.style.transform = `translateX(0px) translateY(0px) rotateZ(0deg)`;
+		console.log(hamState);
+	} else if (hamState === 0) {
+		hamState++;
+		hamup.style.transform = `translateX(10px) rotateZ(45deg)`;
+		hamdown.style.transform = `translateX(-15px) translateY(20px) rotateZ(-45deg)`;
+		// hamdown.style.fill = `white`;
+		console.log(hamState);
+	}
+});
+console.log(hamup);
