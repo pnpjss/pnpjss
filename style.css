@@ -16,6 +16,7 @@ body {
 }
 .grid-container {
 	display: grid;
+	height: 100vh;
 	width: 800px;
 	grid-template-columns: repeat(4, 3fr);
 	grid-template-rows: repeat(6, auto);
@@ -23,17 +24,48 @@ body {
 	/* repeat(3, 1fr); */
 }
 .item1 {
-	grid-column: 1/4;
+	grid-column: 1/5;
 	grid-row: 1/2;
-	height: 180px;
+	height: 200px;
 }
 .ham {
-	margin: 1rem 1rem;
+	margin: 1.7rem 1rem;
+}
+.item2 {
+	display: flex;
+}
+g #swe {
+	fill: #b64100;
+}
+g #bgleft {
+	fill: white;
+}
+
+.btn-swe {
+	padding: 0;
+	position: absolute;
+	border: none;
+	background-color: rgb(0, 0, 0);
+	z-index: 2;
+	margin-left: 16.6rem;
+	justify-content: flex-end;
+	margin-top: 1rem;
+}
+
+.svgleft {
+	position: absolute;
+	z-index: 1;
+	justify-content: flex-end;
+}
+.svgright {
+	position: absolute;
+	margin-left: 19rem;
+	justify-content: flex-end;
+	margin-top: 1rem;
 }
 .item3 {
 	grid-column: 1/5;
 	grid-row: 2;
-	height: 220px;
 }
 .lucas {
 	font-family: Playfair Display;
@@ -73,15 +105,15 @@ body {
 .item4 {
 	grid-column: 1/2;
 	grid-row: 3;
+	height: 20px;
 }
 .item5 {
 	grid-column: 2/5;
 }
 .item6 {
-	height: 200px;
+	height: 20%;
 }
 .item6 img {
-	margin-top: -5rem;
 	margin-left: 1rem;
 	z-index: -1;
 	background-color: rgba(210, 105, 30, 0);
@@ -90,27 +122,28 @@ body {
 	font-family: Playfair Display;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 22px;
 	line-height: 79.8%;
 	letter-spacing: -0.075em;
 	color: #b64100;
 	margin-left: -1.5rem;
+	padding-top: 3rem;
 }
 .whodis-paragraph {
 	font-family: Playfair Display;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 12px;
-	line-height: 108.3%;
-	color: #000000;
+	font-size: 15px;
+	line-height: 125.3%;
+	color: #272727;
 	padding-right: 2rem;
-	margin-top: 0.2rem;
-	max-width: 15.6rem;
+	margin-top: 0.4rem;
+	max-width: 17rem;
 }
 .item7 {
 	grid-column: 2/5;
 	grid-row: 4/6;
-	height: 300px;
+	height: auto;
 }
 .item8 {
 	height: auto;

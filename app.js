@@ -12,3 +12,14 @@
 // let yo = document.querySelector(".yo");
 
 // document.addEventListener("onload", (e) => {});
+
+let btnBgSwe = document.querySelector("#bgleft");
+let btnTextSwe = document.querySelector("#swe");
+let btnBgEng = document.querySelector("#bgleft");
+let eng = document.querySelector(".svgright");
+let btnSwe = document.querySelector(".btn-swe");
+
+btnSwe.addEventListener("click", () => {
+	btnBgSwe.style.fill = "#b64100";
+	btnTextSwe.style.fill = "white";
+});
