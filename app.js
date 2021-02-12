@@ -7,7 +7,7 @@ window.onload = () => {
 	nordeborg.style.margin = `0`;
 	setTimeout(() => {
 		inDev.style.opacity = `100`;
-	}, 266);
+	}, 340);
 };
 
 let btnBgSwe = document.querySelector("#bgleft");
