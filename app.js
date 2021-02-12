@@ -1,3 +1,15 @@
+let lucas = document.querySelector(".lucas");
+let nordeborg = document.querySelector(".nordeborg");
+let webDev = document.querySelector(".web-developer");
+let inDev = document.querySelector(".in-developement");
+window.onload = () => {
+	lucas.style.margin = `0`;
+	nordeborg.style.margin = `0`;
+	setTimeout(() => {
+		inDev.style.opacity = `100`;
+	}, 266);
+};
+
 let btnBgSwe = document.querySelector("#bgleft");
 let btnTextSwe = document.querySelector("#swe");
 
@@ -27,23 +39,24 @@ btnEng.addEventListener("click", () => {
 
 let hamup = document.querySelector("#hamup");
 let hamdown = document.querySelector("#hamdown");
-
+let hamMenu = document.querySelector(".ham-menu");
 const btnHam = document.querySelector(".btn-ham");
-
 let hamState = 0;
 
 btnHam.addEventListener("click", () => {
 	if (hamState === 1) {
 		hamState--;
+		webDev.style.zIndex = `1`;
+		inDev.style.zIndex = `1`;
 		hamup.style.transform = `translateX(0px) rotateZ(0deg)`;
 		hamdown.style.transform = `translateX(0px) translateY(0px) rotateZ(0deg)`;
-		console.log(hamState);
+		hamMenu.style.zIndex = `-1`;
 	} else if (hamState === 0) {
 		hamState++;
+		webDev.style.zIndex = `0`;
+		inDev.style.zIndex = `0`;
 		hamup.style.transform = `translateX(10px) rotateZ(45deg)`;
 		hamdown.style.transform = `translateX(-15px) translateY(20px) rotateZ(-45deg)`;
-		// hamdown.style.fill = `white`;
-		console.log(hamState);
+		hamMenu.style.zIndex = `3`;
 	}
 });
-console.log(hamup);
