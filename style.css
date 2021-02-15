@@ -19,8 +19,6 @@ body {
 	width: 100%;
 	grid-template-columns: repeat(4, 3fr);
 	grid-template-rows: repeat(6, auto);
-	/* grid-template-rows: 200px 200px 20px auto 25px; */
-	/* repeat(3, 1fr); */
 	justify-content: center;
 }
 .item1 {
@@ -48,13 +46,9 @@ g #bgright {
 	transition: 200ms;
 }
 #hamup {
-	/* transform: translateY(0.3rem); */
-	/* transform: translateX(10px) rotateZ(45deg); */
 	transition: 150ms;
 }
 #hamdown {
-	/* transform: translateY(-0.4rem); */
-	/* transform: translateX(-15px) translateY(20px) rotateZ(-45deg); */
 	transition: 150ms;
 }
 .btn-ham {
@@ -112,7 +106,6 @@ g #bgright {
 	line-height: 92.3%;
 	color: #b64000c4;
 	padding-left: 1rem;
-	margin-left: 120%;
 	transition: 150ms ease-in-out;
 }
 .nordeborg {
@@ -123,7 +116,6 @@ g #bgright {
 	line-height: 92.3%;
 	color: #232323c9;
 	padding-left: 1rem;
-	margin-left: -120%;
 	transition: 200ms ease-in-out;
 }
 .web-developer {
@@ -135,12 +127,9 @@ g #bgright {
 	color: #000000;
 	background-color: rgba(255, 255, 255, 0) 00;
 	padding-left: 1.1rem;
-	/* margin-left: -120%; */
 	transition: 50ms ease-out;
 	width: 10rem;
 	display: inline;
-
-	/* position: absolute; */
 }
 .in-developement {
 	font-family: Playfair Display;
@@ -149,7 +138,7 @@ g #bgright {
 	font-size: 16px;
 	line-height: 108.3%;
 	color: #b64100;
-	opacity: 0;
+	opacity: 1;
 	transition: 50ms ease-in-out;
 }
 .item4 {
@@ -175,7 +164,7 @@ g #bgright {
 	line-height: 79.8%;
 	letter-spacing: -0.075em;
 	color: #b64100;
-	margin-left: 4.8rem;
+	margin-left: 5.4rem;
 }
 .whodis-paragraph {
 	font-family: Playfair Display;
@@ -187,7 +176,7 @@ g #bgright {
 	padding-right: 2rem;
 	margin-top: 0.4rem;
 	max-width: 17rem;
-	margin-left: 5.2rem;
+	margin-left: 6rem;
 }
 .item7 {
 	grid-column: 2/5;
@@ -212,6 +201,7 @@ g #bgright {
 }
 
 .ham-menu {
+	display: flex;
 	position: absolute;
 	margin-top: 4rem;
 	height: calc(100% - 4rem);
@@ -219,4 +209,17 @@ g #bgright {
 	background-color: #b64100;
 	z-index: -1;
 	transition: 400ms ease-in-out;
+	justify-content: center;
+}
+.under-construction {
+	font-family: Playfair Display;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 79.8%;
+	letter-spacing: -0.075em;
+	color: #ffffff;
+	position: absolute;
+	padding-top: 15rem;
+	background-color: rgba(255, 255, 255, 0);
 }
