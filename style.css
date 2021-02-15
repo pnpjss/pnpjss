@@ -114,7 +114,7 @@ g #bgright {
 	font-weight: normal;
 	font-size: 64px;
 	line-height: 92.3%;
-	color: #232323c9;
+	color: #111111e7;
 	padding-left: 1rem;
 	transition: 200ms ease-in-out;
 }
@@ -207,8 +207,9 @@ g #bgright {
 	height: calc(100% - 4rem);
 	width: 100%;
 	background-color: #b64100;
+	opacity: 0;
 	z-index: -1;
-	transition: 400ms ease-in-out;
+	transition: 100ms ease-in-out;
 	justify-content: center;
 }
 .under-construction {

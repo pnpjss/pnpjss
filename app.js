@@ -39,11 +39,13 @@ btnHam.addEventListener("click", () => {
 		hamup.style.transform = `translateX(0px) rotateZ(0deg)`;
 		hamdown.style.transform = `translateX(0px) translateY(0px) rotateZ(0deg)`;
 		hamMenu.style.zIndex = `-1`;
+		hamMenu.style.opacity = `0`;
 	} else if (hamState === 0) {
 		hamState++;
 
 		hamup.style.transform = `translateX(10px) rotateZ(45deg)`;
 		hamdown.style.transform = `translateX(-15px) translateY(20px) rotateZ(-45deg)`;
-		hamMenu.style.zIndex = `3`;
+		hamMenu.style.zIndex = `1`;
+		hamMenu.style.opacity = `1`;
 	}
 });
