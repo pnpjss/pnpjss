@@ -8,6 +8,8 @@ let btnBgEng = document.querySelector("#bgright");
 let btnTextEng = document.querySelector("#texteng");
 const btnSwe = document.querySelector(".btn-swe");
 
+let abow = document.querySelector(".abow-line");
+
 btnSwe.addEventListener("click", () => {
 	btnBgSwe.style.fill = "#b64100";
 	btnTextSwe.style.fill = "white";
@@ -40,9 +42,10 @@ btnHam.addEventListener("click", () => {
 		hamdown.style.transform = `translateX(0px) translateY(0px) rotateZ(0deg)`;
 		hamMenu.style.zIndex = `-1`;
 		hamMenu.style.opacity = `0`;
+		abow.style.width = `0%`;
 	} else if (hamState === 0) {
 		hamState++;
-
+		abow.style.width = `8rem`;
 		hamup.style.transform = `translateX(10px) rotateZ(45deg)`;
 		hamdown.style.transform = `translateX(-15px) translateY(20px) rotateZ(-45deg)`;
 		hamMenu.style.zIndex = `1`;
